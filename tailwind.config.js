@@ -8,6 +8,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    // screen: {
+    //   tablet: '800px',
+    // },
     colors: {
       brand: {
         50: '#FEF6DA',
@@ -20,7 +23,6 @@ module.exports = {
         700: '#C19817',
         800: '#A47D05',
         900: '#7A5C00',
-        overlay: 'rgba(0, 0, 0, .02)',
       },
       neutral: {
         50: '#F8F9FA',
@@ -33,6 +35,17 @@ module.exports = {
         700: '#343A40',
         800: '#212529',
         900: '#131517',
+      },
+      overlay: {
+        2: 'rgba(0, 0, 0, .02)',
+        4: 'rgba(0, 0, 0, .04)',
+        8: 'rgba(0, 0, 0, .08)',
+        16: 'rgba(0, 0, 0, .16)',
+        32: 'rgba(0, 0, 0, .32)',
+        64: 'rgba(0, 0, 0, .64)',
+        72: 'rgba(0, 0, 0, .72)',
+        80: 'rgba(0, 0, 0, .8)',
+        96: 'rgba(0, 0, 0, .96)',
       },
     },
     fontFamily: {
@@ -58,6 +71,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: {},
+      gridTemplateColumns: {
+        'tablet-col': 'repeat(3, minmax(200px, 280px))',
+        'desktop-col': 'repeat(4, minmax(280px, 1fr))',
+      },
+      gridTemplateRows: {
+        'tablet-row': 'repeat(4, minmax(154px, 184px))',
+        'desktop-row': 'repeat(3, minmax(184px, 1fr))',
+      },
     },
   },
   plugins: [],

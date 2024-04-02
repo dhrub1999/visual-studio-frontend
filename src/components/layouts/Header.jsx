@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import Logo from '../icons/Logo';
 import PaddingContainer from './PaddingContainer';
 import { navUl, navLi } from '@/lib/framer-motion';
+import ThemeSwitch from '../icons/ThemeSwitch';
 
 const menu = [
   { name: 'Home', link: '/' },
@@ -19,7 +20,7 @@ const menu = [
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(true); // Initially visible
+  const [isSticky, setIsSticky] = useState(true); //* Initially visible
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const pathName = usePathname();
 
@@ -29,9 +30,9 @@ const Header = () => {
 
       // Check scroll direction
       if (prevScrollPos > currentScrollPos) {
-        setIsSticky(true); // Scrolling up, show header
+        setIsSticky(true); //* Scrolling up, show header
       } else {
-        setIsSticky(false); // Scrolling down, hide header
+        setIsSticky(false); //* Scrolling down, hide header
       }
 
       // Save current scroll position
@@ -47,19 +48,22 @@ const Header = () => {
 
   return (
     <header
-      className={`border-b border-neutral-800 ${isSticky ? 'bg-white sticky top-0 z-50' : ''}`}
+      className={`border-b border-neutral-800 transition-all duration-200 ease-in ${isSticky ? 'bg-white sticky top-0 z-50' : ''}`}
     >
-      <PaddingContainer classname='relative flex justify-between items-center py-2'>
+      <PaddingContainer
+        classname={`relative bg-overlay-2 flex justify-between items-center py-2 ${open ? '' : 'backdrop-blur-xl'}`}
+      >
         <div>
           <Logo />
         </div>
         <nav
-          className={`bg-brand-overlay absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center backdrop-blur-xl transition-all md:relative md:h-full md:translate-x-0 md:flex-row md:justify-end ${open ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`bg-overlay-2 absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center backdrop-blur-xl transition-all md:relative md:h-full md:translate-x-0 md:flex-row md:justify-end md:bg-none md:backdrop-blur-none ${open ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <motion.ul
             variants={navUl}
             initial='hidden'
             whileInView='show'
+            viewport={{ once: true }}
             className='flex flex-col items-center justify-center gap-y-12 md:flex-row md:gap-x-12 lg:gap-x-16'
           >
             {menu.map((item) => (
@@ -73,7 +77,7 @@ const Header = () => {
             ))}
           </motion.ul>
         </nav>
-        <div className='block md:hidden'>
+        <div className='block md:hidden' aria-label='mobile menu'>
           <Hamburger
             toggled={open}
             toggle={setOpen}
