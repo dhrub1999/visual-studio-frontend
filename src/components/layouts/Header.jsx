@@ -51,13 +51,13 @@ const Header = () => {
       className={`border-b border-neutral-800 transition-all duration-200 ease-in ${isSticky ? 'bg-white sticky top-0 z-50' : ''}`}
     >
       <PaddingContainer
-        classname={`relative bg-overlay-2 flex justify-between items-center py-2 ${open ? '' : 'backdrop-blur-xl'}`}
+        classname={`relative bg-overlay-2 flex justify-between items-center py-2 ${open ? '' : 'backdrop-blur-[1px]'}`}
       >
         <div>
           <Logo />
         </div>
         <nav
-          className={`bg-overlay-2 absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center backdrop-blur-xl transition-all md:relative md:h-full md:translate-x-0 md:flex-row md:justify-end md:bg-none md:backdrop-blur-none ${open ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`md:bg-transparent absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-overlay-2 backdrop-blur-xl transition-all md:relative md:h-full md:translate-x-0 md:flex-row md:justify-end md:backdrop-blur-none ${open ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <motion.ul
             variants={navUl}
