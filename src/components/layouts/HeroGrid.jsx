@@ -39,14 +39,14 @@ const HeroGrid = ({ images }) => {
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
-      <div className='relative aspect-video max-h-screen min-h-[120px] overflow-hidden md:row-start-4 lg:row-span-2 lg:row-start-2'>
+      <div className='relative aspect-video max-h-screen min-h-[120px] overflow-hidden md:row-start-4 md:aspect-auto lg:row-span-2 lg:row-start-2'>
         <Image
           src={images[4]}
           layout='fill'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
-      <div className='relative aspect-video max-h-screen min-h-[120px] overflow-hidden md:row-start-4 lg:col-start-2 lg:row-start-3'>
+      <div className='relative aspect-video max-h-screen min-h-[120px] overflow-hidden md:row-start-4 md:aspect-auto lg:col-start-2 lg:row-start-3'>
         <Image
           src={images[6]}
           layout='fill'

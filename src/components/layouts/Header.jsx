@@ -13,7 +13,7 @@ import ThemeSwitch from '../icons/ThemeSwitch';
 const menu = [
   { name: 'Home', link: '/' },
   { name: 'Portfolio', link: '/portfolio' },
-  { name: 'about', link: '/about' },
+  { name: 'pricing', link: '/pricing' },
   { name: 'contact', link: '/contact' },
   { name: 'blogs', link: '/blogs' },
 ];

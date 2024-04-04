@@ -78,3 +78,147 @@ export const testimonials = [
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos repellendus, velit voluptatem facilis quidem culpa? Re',
   },
 ];
+
+export const pricings = [
+  {
+    name: 'Wedding',
+    plans: [
+      {
+        planTitle: 'Bride side',
+        planPrice: '30000',
+        planIncludes: [
+          'No limit on number of photos.',
+          'Photo, Video, and Album.',
+          'Experienced photographer and cinemographer.',
+          'Artistically edited photos.',
+          'Unique designs for each Album.',
+          'Full day coverage.',
+        ],
+      },
+      {
+        planTitle: 'Groom side',
+        planPrice: '35000',
+        planIncludes: [
+          'No limit on number of photos.',
+          'Photo, Video, and Album.',
+          'Experienced photographer and cinemographer.',
+          'Artistically edited photos.',
+          'Unique designs for each Album.',
+          '2 days coverage.',
+        ],
+      },
+      {
+        planTitle: 'Both side',
+        planPrice: '55000',
+        planIncludes: [
+          'No limit on number of photos.',
+          'Photo, Video, and Album.',
+          'Experienced photographer and cinemographer.',
+          'Artistically edited and additionally retouched photos.',
+          'Unique designs for each Album.',
+          'Full event coverage.',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Parties',
+    plans: [
+      {
+        planTitle: 'Photoes only',
+        planPrice: '5000',
+        planIncludes: [
+          'Full event coverage.',
+          'No limit on number of photos.',
+          'Unique designs for each Album. (Add on)',
+          'Experienced photographer.',
+          'Artistically edited photos.',
+        ],
+      },
+      {
+        planTitle: 'Videos only',
+        planPrice: '10000',
+        planIncludes: [
+          'Full event coverage.',
+          'No limit on the length of video.',
+          'Experienced photographer.',
+          'Artistically edited photos.',
+        ],
+      },
+      {
+        planTitle: 'Both',
+        planPrice: '15000',
+        planIncludes: [
+          'Full event coverage.',
+          'No limit on number of photos.',
+          'Unique designs for each Album.',
+          'Experienced photographer.',
+          'Artistically edited photos.',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Brands',
+    plans: [
+      {
+        planTitle: 'Architecture',
+        planPrice: '12000',
+        planIncludes: [
+          'Full cite coverage',
+          'Consumer friendly catelogue designs.',
+          'Aesthetically edited photos.',
+          'Wherever you want.',
+          'Maximum 4hr coverage',
+        ],
+      },
+      {
+        planTitle: 'Product Photography',
+        planPrice: '6000',
+        planIncludes: [
+          'Optimized high quality images.',
+          'Covers each and every aspect of your product.',
+          'Your place, your brand.',
+          'Experienced photographer.',
+          'Maximum 4hr coverage',
+        ],
+      },
+      {
+        planTitle: 'Models and Shorts',
+        planPrice: '8000',
+        planIncludes: [
+          'Studio or Outdoor shoot.',
+          'From make-up to hairstyling',
+          'Choice of outfits',
+          'Experienced photographer.',
+          'Model poses and light effects.',
+        ],
+      },
+    ],
+  },
+];
+
+export const portraitImages = [
+  '/potrait-1.jpeg',
+  '/potrait-2.jpeg',
+  '/potrait-3.jpeg',
+  '/potrait-4.jpeg',
+  '/potrait-5.jpeg',
+  '/potrait-6.jpeg',
+];
+
+export const landscapeImages = [
+  '/landscape-1.jpeg',
+  '/landscape-2.jpeg',
+  '/landscape-3.jpeg',
+  '/landscape-4.jpeg',
+  '/landscape-5.jpeg',
+  '/landscape-6.jpeg',
+];
+
+export const whyChooseUs = [
+  "We're a team of passionate designers and developers who love what we do.",
+  'We love to work with brands and businesses in all sizes.',
+  'We love to work with brands and businesses in all sizes.',
+  "We're budget-friendly. We don't charge extra for things we don't use.",
+];

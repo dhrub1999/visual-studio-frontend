@@ -5,7 +5,8 @@ import PaddingContainer from '@/components/layouts/PaddingContainer';
 import Testimonials from '@/components/layouts/Testimonials';
 import Button from '@/components/ui/Button';
 import Carousel from '@/components/ui/Carousel';
-import { testimonials } from '@/lib/data';
+import FeatureCard from '@/components/ui/FeatureCard';
+import { testimonials, whyChooseUs } from '@/lib/data';
 
 const images = [
   '/landscape-1.jpeg',
@@ -75,7 +76,16 @@ export default function Home() {
             Happy clients, Happy stories.
           </h2>
           <Testimonials userReviews={testimonials} className='mt-6 md:mt-6' />
+          <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
+            Plan your Shoot
+          </Button>
         </PaddingContainer>
+        <div className='clip-path-star 0 absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] bg-neutral-700 content-[""]'></div>
+      </section>
+
+      {/* Offer */}
+      <section className='relative mb-4 mt-12 flex justify-center md:mb-6 md:mt-[72px] lg:mb-8 lg:mt-24'>
+        <FeatureCard whyUs={whyChooseUs} />
       </section>
     </main>
   );

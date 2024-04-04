@@ -6,7 +6,7 @@ const Card = ({ userReview, className, size }) => {
   return (
     <figure
       className={cn(
-        'rounded-md border border-neutral-600 bg-neutral-800 p-6',
+        'rounded-md border border-neutral-600 bg-overlay-16 p-6 backdrop-blur-sm',
         className
       )}
     >
