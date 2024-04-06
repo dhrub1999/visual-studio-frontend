@@ -67,6 +67,7 @@ const Header = () => {
           >
             {menu.map((item) => (
               <motion.li
+                onClick={() => setOpen(false)}
                 variants={navLi}
                 key={item.name}
                 className={`capitalize underline-offset-4 transition-all duration-200 hover:text-neutral-100 hover:underline ${pathName === item.link || (pathName === '/' && item.link === '/') ? 'text-brand-600' : 'text-neutral-300'}`}
