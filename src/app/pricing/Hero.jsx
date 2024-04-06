@@ -6,6 +6,7 @@ import Facebook from '@/components/icons/Facebook';
 import Instagram from '@/components/icons/Instagram';
 import Whatsapp from '@/components/icons/Whatsapp';
 import PaddingContainer from '@/components/layouts/PaddingContainer';
+import Button from '@/components/ui/Button';
 
 const Hero = () => {
   return (
@@ -22,25 +23,9 @@ const Hero = () => {
         <p className='mt-4 font-body font-normal text-neutral-300'>
           Book us for your next shoot.
         </p>
-        <div className='mt-8 flex items-center justify-center gap-x-4'>
-          <p className='flex items-center gap-x-2 font-body font-semibold text-brand-400'>
-            Message us now{' '}
-            <span>
-              <FiArrowRight />
-            </span>
-          </p>
-          <div className='flex gap-x-2'>
-            <Link href='/'>
-              <Whatsapp />
-            </Link>
-            <Link href='/'>
-              <Facebook />
-            </Link>
-            <Link href='/'>
-              <Instagram />
-            </Link>
-          </div>
-        </div>
+        <Button className='mt-8' variant='primary'>
+          View all plans
+        </Button>
       </PaddingContainer>
     </div>
   );

@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import Logo from '../icons/Logo';
 import PaddingContainer from './PaddingContainer';
 import { navUl, navLi } from '@/lib/framer-motion';
-import ThemeSwitch from '../icons/ThemeSwitch';
 
 const menu = [
   { name: 'Home', link: '/' },

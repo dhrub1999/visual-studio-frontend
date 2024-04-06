@@ -1,8 +1,18 @@
 import React from 'react';
 import Hero from './Hero';
 import PricingGrid from '@/components/layouts/PricingGrid';
-import { landscapeImages, portraitImages } from '@/lib/data';
+import {
+  landscapeImages,
+  portraitImages,
+  pricings,
+  testimonials,
+} from '@/lib/data';
 import './styles/pricing.css';
+import PaddingContainer from '@/components/layouts/PaddingContainer';
+import PriceLayout from './PriceLayout';
+import Testimonials from '@/components/layouts/Testimonials';
+import Button from '@/components/ui/Button';
+import FeatureCard from '@/components/ui/FeatureCard';
 
 const Pricing = () => {
   return (
@@ -13,6 +23,29 @@ const Pricing = () => {
           portraitArr={portraitImages}
           landscapeArr={landscapeImages}
         />
+      </section>
+
+      <section className='mt-12 bg-neutral-800 md:mt-[72px] lg:mt-24'>
+        <PaddingContainer>
+          <PriceLayout plans={pricings} />
+        </PaddingContainer>
+      </section>
+
+      <section className='relative mt-12 md:mt-[72px] lg:mt-24'>
+        <PaddingContainer classname='relative'>
+          <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
+            Happy clients, Happy stories.
+          </h2>
+          <Testimonials userReviews={testimonials} className='mt-6 md:mt-6' />
+          <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
+            Plan your Shoot
+          </Button>
+        </PaddingContainer>
+        <div className='clip-path-star 0 absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] bg-neutral-700 content-[""]'></div>
+      </section>
+
+      <section className='mt-12 pb-4 md:mt-[72px] lg:mt-24'>
+        <FeatureCard />
       </section>
     </main>
   );

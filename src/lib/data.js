@@ -122,7 +122,7 @@ export const pricings = [
     ],
   },
   {
-    name: 'Parties',
+    name: 'Event',
     plans: [
       {
         planTitle: 'Photoes only',
@@ -130,7 +130,7 @@ export const pricings = [
         planIncludes: [
           'Full event coverage.',
           'No limit on number of photos.',
-          'Unique designs for each Album. (Add on)',
+          'Unique album design. (Add on)',
           'Experienced photographer.',
           'Artistically edited photos.',
         ],
@@ -159,7 +159,7 @@ export const pricings = [
     ],
   },
   {
-    name: 'Brands',
+    name: 'Brand',
     plans: [
       {
         planTitle: 'Architecture',
@@ -192,6 +192,32 @@ export const pricings = [
           'Choice of outfits',
           'Experienced photographer.',
           'Model poses and light effects.',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Other',
+    plans: [
+      {
+        planTitle: 'Album',
+        planPrice: '5000',
+        planIncludes: [
+          'Unlimited edits.',
+          'Unique album designs',
+          'Handmade options available',
+          'Degital & Physical delivery of the album',
+          'No watermarks',
+        ],
+      },
+      {
+        planTitle: 'Video',
+        planPrice: '10000',
+        planIncludes: [
+          'Full event coverage.',
+          'No limit on the length of video.',
+          'Experienced videographer.',
+          'Artistically edited videos.',
         ],
       },
     ],

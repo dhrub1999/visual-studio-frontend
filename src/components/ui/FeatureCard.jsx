@@ -2,11 +2,13 @@ import React from 'react';
 import Button from './Button';
 import Facebook from '../icons/Facebook';
 import Instagram from '../icons/Instagram';
-import { FiCheck } from 'react-icons/fi';
 
 const FeatureCard = ({ whyUs }) => {
   return (
-    <div className='flex w-full max-w-[800px] flex-col items-center rounded-lg border border-neutral-600 bg-overlay-64 p-8 backdrop-blur-xl md:p-12 lg:rounded-xl lg:py-14'>
+    <div
+      className='flex w-full max-w-[800px] flex-col items-center rounded-lg border border-neutral-600 bg-overlay-64 p-8 backdrop-blur-xl md:p-12 lg:rounded-xl lg:py-14'
+      aria-label='Special offer'
+    >
       <div className='text-center'>
         <p className='font-body text-sm font-semibold leading-4 text-neutral-400 lg:text-base'>
           Book us for Wedding Photography and get a...
