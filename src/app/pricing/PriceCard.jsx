@@ -1,6 +1,7 @@
-import Button from '@/components/ui/Button';
 import React from 'react';
 import { FiCheckCircle } from 'react-icons/fi';
+
+import Button from '@/components/ui/Button';
 
 const PriceCard = ({ plan }) => {
   return (

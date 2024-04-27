@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.15.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "font-awesome": "^4.7.0",

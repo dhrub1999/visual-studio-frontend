@@ -1,18 +1,20 @@
 import React from 'react';
+
 import Hero from './Hero';
 import PricingGrid from '@/components/layouts/PricingGrid';
+import PaddingContainer from '@/components/layouts/PaddingContainer';
+import PriceLayout from './PriceLayout';
+import Testimonials from '@/components/layouts/Testimonials';
+import Button from '@/components/ui/Button';
+import FeatureCard from '@/components/ui/FeatureCard';
 import {
   landscapeImages,
   portraitImages,
   pricings,
   testimonials,
 } from '@/lib/data';
+
 import './styles/pricing.css';
-import PaddingContainer from '@/components/layouts/PaddingContainer';
-import PriceLayout from './PriceLayout';
-import Testimonials from '@/components/layouts/Testimonials';
-import Button from '@/components/ui/Button';
-import FeatureCard from '@/components/ui/FeatureCard';
 
 const Pricing = () => {
   return (
@@ -44,7 +46,7 @@ const Pricing = () => {
         <div className='clip-path-star 0 absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] bg-neutral-700 content-[""]'></div>
       </section>
 
-      <section className='mt-12 pb-4 md:mt-[72px] lg:mt-24'>
+      <section className='mt-12 flex w-full justify-center pb-4 md:mt-[72px] lg:mt-24'>
         <FeatureCard />
       </section>
     </main>

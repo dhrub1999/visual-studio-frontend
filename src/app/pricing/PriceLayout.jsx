@@ -6,6 +6,7 @@ import Whatsapp from '@/components/icons/Whatsapp';
 import Facebook from '@/components/icons/Facebook';
 import Instagram from '@/components/icons/Instagram';
 import Link from 'next/link';
+import { socialLinks } from '@/lib/data';
 
 const PriceLayout = ({ plans }) => {
   const [selectedOption, setSelectedOption] = useState(plans[0].name);
@@ -19,7 +20,7 @@ const PriceLayout = ({ plans }) => {
         {plans.map((plan, i) => (
           <li key={i}>
             <button
-              className={`rounded-md border border-neutral-600 p-2 text-base transition-all duration-500 ease-in-out hover:ring-1 hover:ring-neutral-500 md:text-lg lg:text-xl ${selectedOption === plan.name ? 'font-bold ring-1 ring-brand-500 ' : 'font-medium'}`}
+              className={`rounded-md border border-neutral-600 p-2 text-base text-neutral-400 transition-all duration-500 ease-in-out hover:ring-1 hover:ring-neutral-500 md:text-lg lg:text-xl ${selectedOption === plan.name ? 'font-bold ring-1 ring-brand-500 ' : 'font-medium'}`}
               onClick={() => handleOptionClick(plan.name)}
             >
               {plan.name}
@@ -43,7 +44,7 @@ const PriceLayout = ({ plans }) => {
             ))}
         </div>
       </div>
-      <div className='mt-8 flex items-center justify-center gap-x-4 md:gap-x-8'>
+      <div className='mt-0 flex items-center justify-center gap-x-4 md:gap-x-8'>
         <p className='flex items-center gap-x-2 font-body text-base font-semibold text-brand-400 md:text-lg lg:text-xl'>
           Message us now{' '}
           <span>
@@ -51,13 +52,13 @@ const PriceLayout = ({ plans }) => {
           </span>
         </p>
         <div className='flex gap-x-2 md:gap-x-4 lg:gap-x-6'>
-          <Link href='/'>
+          <Link target='_blank' href={socialLinks[0].href}>
             <Whatsapp />
           </Link>
-          <Link href='/'>
+          <Link target='_blank' href={socialLinks[1].href}>
             <Facebook />
           </Link>
-          <Link href='/'>
+          <Link target='_blank' href={socialLinks[2].href}>
             <Instagram />
           </Link>
         </div>

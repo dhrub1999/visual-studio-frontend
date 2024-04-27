@@ -2,7 +2,6 @@ import { Open_Sans, Pacifico, Cormorant_Garamond } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layouts/Header';
 import Footer from '@/components/layouts/Footer';
-import { Providers } from './providers';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -35,11 +34,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${openSans.variable} ${pacifico.variable} ${cormorantGaramond.variable} bg-neutral-900`}
       >
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

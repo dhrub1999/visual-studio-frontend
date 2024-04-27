@@ -8,9 +8,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    // screen: {
-    //   tablet: '800px',
-    // },
+    screens: {
+      special: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     colors: {
       brand: {
         50: '#FEF6DA',

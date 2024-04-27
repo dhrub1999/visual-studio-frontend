@@ -1,10 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
-import { FiArrowRight } from 'react-icons/fi';
+import Link from 'next/link';
 
-import Facebook from '@/components/icons/Facebook';
-import Instagram from '@/components/icons/Instagram';
-import Whatsapp from '@/components/icons/Whatsapp';
 import PaddingContainer from '@/components/layouts/PaddingContainer';
 import Button from '@/components/ui/Button';
 
@@ -23,9 +19,11 @@ const Hero = () => {
         <p className='mt-4 font-body font-normal text-neutral-300'>
           Book us for your next shoot.
         </p>
-        <Button className='mt-8' variant='primary'>
-          View all plans
-        </Button>
+        <Link href={'/pricing'}>
+          <Button className='mt-8' variant='primary'>
+            View all plans
+          </Button>
+        </Link>
       </PaddingContainer>
     </div>
   );
