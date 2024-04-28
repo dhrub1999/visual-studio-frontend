@@ -8,6 +8,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[0]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
@@ -15,6 +16,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[1]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
@@ -22,6 +24,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[5]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
@@ -29,6 +32,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[3]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover object-center transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
@@ -36,6 +40,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[2]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
@@ -43,6 +48,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[4]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>
@@ -50,6 +56,7 @@ const HeroGrid = ({ images }) => {
         <Image
           src={images[6]}
           layout='fill'
+          alt='feature image'
           className='rounded border border-neutral-800 object-cover transition-all duration-300 ease-in hover:scale-105'
         />
       </div>

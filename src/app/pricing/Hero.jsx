@@ -19,7 +19,12 @@ const Hero = () => {
         <p className='mt-4 font-body font-normal text-neutral-300'>
           Book us for your next shoot.
         </p>
-        <Link href={'/pricing'}>
+        <Link
+          target='_blank'
+          href={
+            'https://drive.google.com/drive/folders/1IS_78AaVZWL4R3B49gPDqryWPPBJ96Fj'
+          }
+        >
           <Button className='mt-8' variant='primary'>
             View all plans
           </Button>

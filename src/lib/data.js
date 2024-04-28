@@ -4,35 +4,35 @@ export const testimonials = [
     name: 'Atanu Dey',
     profession: 'photographer',
     review:
-      'From start to finish, Samrat demonstrated professionalism and expertise. They took the time to understand our brand identity and delivered designs that exceeded our expectations. Highly recommend. They took the time to understand our brand identity and delivered designs that exceeded our expectations. Highly recommend',
+      "They're the one of the great photographer & designer. He is super personable & very talented at his craft, also very friendly and cooperative with all. He is very energetic to his work and very funny. I was so pleased with my session and final photographs. Highly recommending this studio not only for their professional, but also for their personal and creative work. I would highly recommend this studio.",
   },
   {
     imgSrc: '/user-3.jpeg',
     name: 'Sneha Bhattacharya',
     profession: 'student',
     review:
-      "I've had the pleasure of working with Samrat on multiple projects, and each time, they've impressed me with their talent and professionalism.",
+      "Samrat and The Visual Paradise team exceeded all our expectations! Their professionalism and attention to detail made our wedding day even more magical. We're forever grateful for the stunning photos that capture every precious moment.",
   },
   {
     imgSrc: '/user-4.jpeg',
     name: 'Kaushik Das',
     profession: 'freelance',
     review:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos repellendus, velit voluptatem facilis quidem culpa? Rem, provident corporis. At!',
+      'Working with Samrat was an absolute pleasure! His talent behind the lens is unmatched, and he has a knack for capturing the essence of every scene. The Visual Paradise truly lives up to its name!',
   },
   {
     imgSrc: '/user-5.jpeg',
     name: 'Kaushik Das',
     profession: 'freelance',
     review:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos repellendus, velit voluptatem facilis quidem culpa? Rem, provident corporis. At!',
+      "Samrat's dedication to his craft shines through in every photograph. The Visual Paradise has an eye for beauty and a talent for turning ordinary moments into extraordinary memories. Highly recommended!",
   },
   {
     imgSrc: '/user-2.jpeg',
     name: 'Sudipto Das',
     profession: 'freelance',
     review:
-      "I've had the pleasure of working with Samrat on multiple projects, and each time, they've impressed me with their talent and professionalism. Their designs are not only visually stunning but also strategic and effective. Highly recommended!",
+      "We couldn't be happier with the results from our photoshoot with Samrat. His creativity and passion for photography are evident in every shot. The Visual Paradise is our go-to for capturing life's special moments.",
   },
 
   {
@@ -40,42 +40,42 @@ export const testimonials = [
     name: 'Tamal Biswas',
     profession: 'freelance',
     review:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos repellendus, velit voluptatem facilis quidem culpa? Re',
+      "Samrat's expertise and professionalism made our corporate event a success. The Visual Paradise team seamlessly captured the energy and excitement of the day, delivering top-notch photos that exceeded our expectations.",
   },
   {
     imgSrc: '/user-2.jpeg',
     name: 'Sudipto Das',
     profession: 'freelance',
     review:
-      'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+      'I was blown away by the quality of service provided by Samrat and The Visual Paradise team. From start to finish, they were a joy to work with, and the final photos were beyond stunning. I highly recommend their services!',
   },
   {
     imgSrc: '/user-3.jpeg',
     name: 'Sneha Bhattacharya',
     profession: 'student',
     review:
-      "I've had the pleasure of working with Samrat on multiple projects, and each time, they've impressed me with their talent and professionalism md:mt-[72px] lg:mt-24 md:mt-[72px] lg:mt-24md:mt-[72px] lg:mt-24.",
+      "Samrat has a true gift for storytelling through photography. The Visual Paradise perfectly captured the emotion and beauty of our family portrait session. We'll cherish these photos for years to come.",
   },
   {
     imgSrc: '/user-4.jpeg',
     name: 'Kaushik Das',
     profession: 'freelance',
     review:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos repellendus, velit voluptatem facilis quidem culpa? Rem, provident corporis. At!',
+      "I can't thank Samrat enough for the incredible headshots he took for my portfolio. The Visual Paradise's attention to detail and artistic flair truly set them apart. I've never felt more confident in front of the camera!",
   },
   {
     imgSrc: '/user-5.jpeg',
     name: 'Kaushik Das',
     profession: 'freelance',
     review:
-      'Donec elementum purus sit amet libero tristique, nec vestibulum libero fermentum. Nulla facilisi. Vivamus convallis felis non felis congue, vitae aliquet felis ultricies.',
+      "Samrat's talent knows no bounds! The Visual Paradise beautifully captured our product line, highlighting each detail with precision and elegance. We're thrilled with the results and look forward to working together again.",
   },
   {
     imgSrc: '/user-6.jpeg',
     name: 'Tamal Biswas',
     profession: 'freelance',
     review:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos repellendus, velit voluptatem facilis quidem culpa? Re',
+      "I've had the pleasure of collaborating with Samrat and The Visual Paradise team on several projects, and they never disappoint! Their attention to detail and creative vision always result in stunning photographs that exceed expectations.",
   },
 ];
 

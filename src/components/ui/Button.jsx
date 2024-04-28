@@ -22,13 +22,13 @@ const buttonVariants = cva(
   }
 );
 
-const Button = forwardRef(({ className, size, variant, ...props }) => {
+const Button = ({ className, size, variant, ...props }) => {
   return (
     <button
       className={cn(buttonVariants({ variant, size }), className)}
       {...props}
     ></button>
   );
-});
+};
 
 export default Button;

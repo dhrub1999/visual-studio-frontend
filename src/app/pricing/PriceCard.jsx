@@ -2,6 +2,8 @@ import React from 'react';
 import { FiCheckCircle } from 'react-icons/fi';
 
 import Button from '@/components/ui/Button';
+import Link from 'next/link';
+import { socialLinks } from '@/lib/data';
 
 const PriceCard = ({ plan }) => {
   return (
@@ -27,9 +29,9 @@ const PriceCard = ({ plan }) => {
           </li>
         ))}
       </ul>
-      <Button fullWidth={true} className='mt-8'>
-        Chat on whatsapp
-      </Button>
+      <Link href={socialLinks[0].href} target='_blank'>
+        <Button className='mt-8 w-full'>Chat on whatsapp</Button>
+      </Link>
     </div>
   );
 };

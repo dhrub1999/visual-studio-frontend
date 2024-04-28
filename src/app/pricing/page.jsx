@@ -11,10 +11,12 @@ import {
   landscapeImages,
   portraitImages,
   pricings,
+  socialLinks,
   testimonials,
 } from '@/lib/data';
 
 import './styles/pricing.css';
+import Link from 'next/link';
 
 const Pricing = () => {
   return (
@@ -26,12 +28,12 @@ const Pricing = () => {
           landscapeArr={landscapeImages}
         />
       </section>
-
+      {/* 
       <section className='mt-12 bg-neutral-800 md:mt-[72px] lg:mt-24'>
         <PaddingContainer>
           <PriceLayout plans={pricings} />
         </PaddingContainer>
-      </section>
+      </section> */}
 
       <section className='relative mt-12 md:mt-[72px] lg:mt-24'>
         <PaddingContainer classname='relative'>
@@ -39,9 +41,11 @@ const Pricing = () => {
             Happy clients, Happy stories.
           </h2>
           <Testimonials userReviews={testimonials} className='mt-6 md:mt-6' />
-          <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
-            Plan your Shoot
-          </Button>
+          <Link href={socialLinks[0].href} target='_blank'>
+            <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
+              Plan your Shoot
+            </Button>
+          </Link>
         </PaddingContainer>
         <div className='clip-path-star 0 absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] bg-neutral-700 content-[""]'></div>
       </section>

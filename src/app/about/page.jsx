@@ -19,11 +19,11 @@ const About = () => {
           </h1>
           <p className='mt-4 font-body text-neutral-300 lg:w-[80%] lg:max-w-[520px]'>
             Welcome toThe Visual Paradise , where moments meet magnificence.
-            We're a team of storytellers armed with cameras, ready to craft your
-            memories into visual treasures. From heartfelt weddings to corporate
-            triumphs, we're here to capture the essence of your narrative. Let's
-            embark on a creative journey together. Reach out today, and let's
-            make magic happen.
+            We&apos;re a team of storytellers armed with cameras, ready to craft
+            your memories into visual treasures. From heartfelt weddings to
+            corporate triumphs, we&apos;re here to capture the essence of your
+            narrative. Let&apos;s embark on a creative journey together. Reach
+            out today, and let&apos;s make magic happen.
           </p>
 
           <div className='mt-8 flex flex-col items-center gap-x-8 gap-y-4 md:items-start md:justify-start md:gap-y-6 lg:flex-row lg:gap-x-10'>
@@ -36,6 +36,7 @@ const About = () => {
         <div className='relative aspect-[9/16] h-auto w-full max-w-[280px] lg:max-w-[320px]'>
           <Image
             src='/samrat-2.jpeg'
+            alt='samrat image'
             layout='fill'
             className='rounded-lg border border-neutral-700 object-cover object-center'
           />
@@ -48,21 +49,21 @@ const About = () => {
         </h2>
         <PaddingContainer classname='flex mt-8 md:mt-10 lg:mt-12 flex-col md:flex-row justify-center gap-4 items-center lg:gap-8 md:items-start'>
           <div className=' flex flex-col font-body text-neutral-400'>
-            <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-[20px] md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
+            <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-base md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
               <IoLocationSharp className='text-[36px] text-brand-400' />
               <p>94/D khatirbazar Lane, Serampore, Hooghly.</p>
             </div>
-            <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-[20px] md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
+            <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-base md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
               <MdOutlineLocalPhone className='text-[36px] text-brand-400' />
               <p>+91 98756 98249</p>
             </div>
-            <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-[20px] md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
+            <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-base md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
               <IoIosMail className='text-[36px] text-brand-400' />
               <p>thevisualparadise9@gmail.com</p>
             </div>
           </div>
           <div className='relative'>
-            <Image src='/potrait-1.jpeg' layout='fill' />
+            <Image src='/potrait-1.jpeg' alt='image' layout='fill' />
           </div>
           <div>
             <iframe
