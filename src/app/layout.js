@@ -1,4 +1,6 @@
 import { Open_Sans, Pacifico, Cormorant_Garamond } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import './globals.css';
 import Header from '@/components/layouts/Header';
 import Footer from '@/components/layouts/Footer';
@@ -38,6 +40,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
