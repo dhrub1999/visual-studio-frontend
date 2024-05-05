@@ -52,7 +52,9 @@ const Header = () => {
         classname={`relative bg-overlay-2 flex justify-between items-center py-2 ${open ? '' : 'backdrop-blur-[1px]'}`}
       >
         <div>
-          <Logo />
+          <Link href='/'>
+            <Logo />
+          </Link>
         </div>
         <nav
           className={`md:bg-transparent absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-overlay-2 backdrop-blur-xl transition-all md:relative md:h-full md:translate-x-0 md:flex-row md:justify-end md:backdrop-blur-none ${open ? 'translate-x-0' : 'translate-x-full'}`}

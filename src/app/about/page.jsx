@@ -30,7 +30,9 @@ const About = () => {
             <Link href={'/pricing'}>
               <Button>Plan your shoot</Button>
             </Link>
-            <Button variant='secondary'>View our portfolio</Button>
+            <Link href={''}>
+              <Button variant='secondary'>View our portfolio</Button>
+            </Link>
           </div>
         </div>
         <div className='relative aspect-[9/16] h-auto w-full max-w-[280px] lg:max-w-[320px]'>

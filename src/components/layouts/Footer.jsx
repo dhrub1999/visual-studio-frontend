@@ -14,7 +14,9 @@ const Footer = () => {
     <footer className='border-t border-brand-900 bg-neutral-800'>
       <PaddingContainer classname='py-4'>
         <div className='flex w-full items-center justify-between'>
-          <Logo />
+          <Link href='/'>
+            <Logo />
+          </Link>
           <div className='flex flex-col items-end gap-y-2'>
             <p className='font-body text-sm text-neutral-500 md:text-base'>
               Reach us on
@@ -42,7 +44,8 @@ const Footer = () => {
           <p className='text-center text-neutral-500'>
             Design & Developed by{' '}
             <Link
-              href={'tamalbiswas.com'}
+              target='blank'
+              href={'https://www.tamalbiswas.com'}
               className='font-semibold text-neutral-300 transition-all duration-300 hover:text-neutral-200 hover:underline hover:underline-offset-2'
             >
               Tamal Biswas.

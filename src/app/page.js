@@ -6,7 +6,8 @@ import Testimonials from '@/components/layouts/Testimonials';
 import Button from '@/components/ui/Button';
 import Carousel from '@/components/ui/Carousel';
 import FeatureCard from '@/components/ui/FeatureCard';
-import { testimonials, whyChooseUs } from '@/lib/data';
+import { socialLinks, testimonials, whyChooseUs } from '@/lib/data';
+import Link from 'next/link';
 
 const images = [
   '/landscape-1.jpeg',
@@ -44,10 +45,17 @@ export default function Home() {
             </p>
           </div>
           <div className='flex flex-col items-center gap-x-8 gap-y-4 md:flex-row-reverse md:justify-center md:gap-y-0 lg:gap-x-10'>
-            <Button size={false} variant='primary'>
-              Plan your shoot
-            </Button>
-            <Button variant='secondary'>View our portfolio</Button>
+            <Link href={socialLinks[0].href} target='_blank'>
+              <Button size={false} variant='primary'>
+                Plan your shoot
+              </Button>
+            </Link>
+            <Link
+              target='_blank'
+              href='https://drive.google.com/drive/folders/1Gi7OCjcxUcwXf_vkWzpyKQlMGrZgRkCY'
+            >
+              <Button variant='secondary'>View our portfolio</Button>
+            </Link>
           </div>
           <div className='absolute left-0 top-0 -z-[2] h-screen w-full before:absolute before:left-0 before:top-0 before:z-[1] before:h-full before:w-full before:bg-overlay-72 before:content-[""]'>
             <Carousel imgSrc={images} />
@@ -63,9 +71,14 @@ export default function Home() {
             Signature Shots.
           </h2>
           <HeroGrid images={imageGallery} />
-          <Button variant='secondary' className='mt-8 block lg:mt-12'>
-            View our Portfolio
-          </Button>
+          <Link
+            target='_blank'
+            href='https://drive.google.com/drive/folders/1Gi7OCjcxUcwXf_vkWzpyKQlMGrZgRkCY'
+          >
+            <Button variant='secondary' className='mt-8 block lg:mt-12'>
+              View our Portfolio
+            </Button>
+          </Link>
         </PaddingContainer>
       </section>
 
@@ -76,9 +89,11 @@ export default function Home() {
             Happy clients, Happy stories.
           </h2>
           <Testimonials userReviews={testimonials} className='mt-6 md:mt-6' />
-          <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
-            Plan your Shoot
-          </Button>
+          <Link href={socialLinks[0].href} target='_blank'>
+            <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
+              Plan your Shoot
+            </Button>
+          </Link>
         </PaddingContainer>
         <div className='clip-path-star 0 absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] bg-neutral-700 content-[""]'></div>
       </section>
