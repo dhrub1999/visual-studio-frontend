@@ -1,10 +1,16 @@
-import { Open_Sans, Pacifico, Cormorant_Garamond } from 'next/font/google';
+import {
+  Open_Sans,
+  Pacifico,
+  Cormorant_Garamond,
+  Modak,
+} from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css';
 import Header from '@/components/layouts/Header';
 import Footer from '@/components/layouts/Footer';
+import Modal from '@/components/ui/Modal';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -40,6 +46,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Modal />
         <Footer />
         <Analytics />
         <SpeedInsights />

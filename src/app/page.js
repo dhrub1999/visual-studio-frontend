@@ -6,6 +6,7 @@ import Testimonials from '@/components/layouts/Testimonials';
 import Button from '@/components/ui/Button';
 import Carousel from '@/components/ui/Carousel';
 import FeatureCard from '@/components/ui/FeatureCard';
+import Modal from '@/components/ui/Modal';
 import { socialLinks, testimonials, whyChooseUs } from '@/lib/data';
 import Link from 'next/link';
 
