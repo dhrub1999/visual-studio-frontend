@@ -35,7 +35,7 @@ const Modal = () => {
       <button
         aria-label='close modal'
         className='absolute right-10 top-10 rounded-md border border-neutral-700 p-2 text-2xl-pacifico text-neutral-400 transition-all duration-200 hover:scale-110 hover:text-neutral-200'
-        onClick={() => setOpen(!open)}
+        onClick={handleClose}
       >
         <IoClose className='' />
       </button>
