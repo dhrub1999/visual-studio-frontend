@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { useTheme } from 'next-themes';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);

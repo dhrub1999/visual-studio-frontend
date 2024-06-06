@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { IoLocationSharp } from 'react-icons/io5';
 import { MdOutlineLocalPhone } from 'react-icons/md';
 import { IoIosMail } from 'react-icons/io';
