@@ -1,4 +1,4 @@
-'use client';
+import Link from 'next/link';
 
 import HeroGrid from '@/components/layouts/HeroGrid';
 import PaddingContainer from '@/components/layouts/PaddingContainer';
@@ -6,9 +6,11 @@ import Testimonials from '@/components/layouts/Testimonials';
 import Button from '@/components/ui/Button';
 import Carousel from '@/components/ui/Carousel';
 import FeatureCard from '@/components/ui/FeatureCard';
-import Modal from '@/components/ui/Modal';
-import { socialLinks, testimonials, whyChooseUs } from '@/lib/data';
-import Link from 'next/link';
+import { socialLinks, testimonials } from '@/lib/data';
+import {
+  heroGridImages,
+  testimonials as userReview,
+} from '@/lib/sanity/fetchData';
 
 const images = [
   '/landscape-1.jpeg',
@@ -18,16 +20,6 @@ const images = [
   '/landscape-5.jpeg',
   '/landscape-6.jpeg',
   '/landscape-7.jpeg',
-];
-
-const imageGallery = [
-  '/landscape-1.jpeg',
-  '/landscape-2.jpeg',
-  '/potrait-1.jpeg',
-  '/potrait-2.jpeg',
-  '/landscape-3.jpeg',
-  '/potrait-3.jpeg',
-  '/landscape-4.jpeg',
 ];
 
 export default function Home() {
@@ -71,7 +63,7 @@ export default function Home() {
           <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
             Signature Shots.
           </h2>
-          <HeroGrid images={imageGallery} />
+          <HeroGrid images={heroGridImages} />
           <Link
             target='_blank'
             href='https://drive.google.com/drive/folders/1Gi7OCjcxUcwXf_vkWzpyKQlMGrZgRkCY'
@@ -101,7 +93,7 @@ export default function Home() {
 
       {/* Offer */}
       <section className='relative mb-4 mt-12 flex justify-center md:mb-6 md:mt-[72px] lg:mb-8 lg:mt-24'>
-        <FeatureCard whyUs={whyChooseUs} />
+        <FeatureCard />
       </section>
     </main>
   );

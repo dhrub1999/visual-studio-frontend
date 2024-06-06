@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../ui/Card';
 
 const Testimonials = ({ userReviews, className }) => {
+  console.log(userReviews[1]);
   return (
     <div
       className={`grid grid-rows-1 gap-4 md:grid-cols-2 lg:grid-flow-col lg:grid-cols-4 ${className}`}
