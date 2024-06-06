@@ -57,5 +57,3 @@ async function getTestimonials() {
 }
 
 export const testimonials = await getTestimonials();
-
-console.log(testimonials);
