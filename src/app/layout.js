@@ -35,7 +35,7 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata = {
   title: 'The Visual Paradise',
   description:
-    "Welcome to The Visual Paradise, where breathtaking moments are captured through the lens of creativity. Explore our portfolio of stunning photography, ranging from captivating landscapes to timeless wedding memories. Our skilled photographers blend artistry with technical expertise to deliver images that evoke emotion and tell stories. Whether you're seeking professional event coverage, exquisite portraits, or inspiring travel photography, we're dedicated to exceeding your expectations. Contact us today to transform your vision into unforgettable visual masterpieces.",
+    "Welcome to The Visual Paradise, where breathtaking moments are captured through the lens of creativity. Explore our portfolio of stunning photography, ranging from captivating landscapes to timeless wedding memories. Our skilled photographers blend artistry with technical expertise to deliver images that evoke emotion and tell stories. Whether you're seeking professional event coverage, exquisite portraits, or inspiring travel photography, we're dedicated to exceeding your expectations. Contact us today to your vision into unforgettable visual masterpieces. transform",
 };
 
 export default function RootLayout({ children }) {
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <meta name='viewport' content='width=device-width, minimum-scale=1.0' />
       </head>
       <body
-        className={`${openSans.variable} ${pacifico.variable} ${cormorantGaramond.variable} bg-neutral-900`}
+        className={`${openSans.variable} ${pacifico.variable} ${cormorantGaramond.variable} overflow-hidden bg-neutral-900`}
       >
         <Header />
         {children}

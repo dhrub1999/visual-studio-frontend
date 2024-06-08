@@ -12,7 +12,7 @@ import FeatureCard from '@/components/ui/FeatureCard';
 const About = () => {
   return (
     <main>
-      <PaddingContainer classname='flex flex-col-reverse md:flex-row gap-y-8 items-center py-8 md:justify-between lg:justify-center'>
+      <PaddingContainer classname='flex flex-col-reverse items-center gap-y-8 py-8 md:flex-row md:justify-between lg:justify-center'>
         <div className='text-center md:w-1/2 md:text-left lg:w-2/3'>
           <h1 className='font-headline text-4xl-pacifico text-neutral-200 md:text-5xl-pacifico lg:text-6xl-pacifico'>
             About Us.
@@ -49,7 +49,7 @@ const About = () => {
         <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
           Contact Us
         </h2>
-        <PaddingContainer classname='flex mt-8 md:mt-10 lg:mt-12 flex-col md:flex-row justify-center gap-4 items-center lg:gap-8 md:items-start'>
+        <PaddingContainer classname='mt-8 flex flex-col items-center justify-center gap-4 md:mt-10 md:flex-row md:items-start lg:mt-12 lg:gap-8'>
           <div className=' flex flex-col font-body text-neutral-400'>
             <div className='flex items-center justify-start gap-x-4 border-b border-b-neutral-600 py-4 text-base md:py-6 md:text-[24px] lg:py-8 lg:text-[32px]'>
               <IoLocationSharp className='text-[36px] text-brand-400' />

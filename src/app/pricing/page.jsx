@@ -35,7 +35,7 @@ const Pricing = () => {
         </PaddingContainer>
       </section> */}
 
-      <section className='relative mt-12 md:mt-[72px] lg:mt-24'>
+      <section className='relative mt-12 overflow-hidden md:mt-[72px] lg:mt-24'>
         <PaddingContainer classname='relative'>
           <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
             Happy clients, Happy stories.
@@ -47,7 +47,7 @@ const Pricing = () => {
             </Button>
           </Link>
         </PaddingContainer>
-        <div className='clip-path-star 0 absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] bg-neutral-700 content-[""]'></div>
+        <div className='clip-path-star absolute -bottom-[10%] -right-[20%] -z-10 h-[80rem] w-[80rem] overflow-hidden bg-neutral-700 content-[""]'></div>
       </section>
 
       <section className='mt-12 flex w-full justify-center pb-4 md:mt-[72px] lg:mt-24'>
