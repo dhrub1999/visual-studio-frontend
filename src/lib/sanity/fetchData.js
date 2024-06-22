@@ -46,6 +46,7 @@ async function getTestimonials() {
   const query = `*[_type == "testimonials"]{
     _id,
     name,
+    role,
     "imageUrl": image.asset->url,
     review[]{
       ...,

@@ -81,7 +81,7 @@ export default function Home() {
           <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
             Happy clients, Happy stories.
           </h2>
-          <Testimonials userReviews={testimonials} className='mt-6 md:mt-6' />
+          <Testimonials userReviews={userReview} className='mt-6 md:mt-6' />
           <Link href={socialLinks[0].href} target='_blank'>
             <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
               Plan your Shoot

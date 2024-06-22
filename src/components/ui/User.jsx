@@ -1,7 +1,8 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import React from 'react';
 
 const User = ({ userImg, name, role }) => {
+  console.log(userImg);
   return (
     <figcaption className='flex items-center gap-x-4 pt-4'>
       <div className='relative h-10 w-10 overflow-hidden rounded-full md:h-12 md:w-12'>

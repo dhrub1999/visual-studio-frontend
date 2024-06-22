@@ -28,8 +28,7 @@ const RichTextToParagraph = ({ richText, variant }) => {
 
   return (
     <p
-      variants={variant}
-      className='mt-8px text-slate-500 text-sm md:text-base'
+      className={`font-body font-normal text-neutral-100 ${variant === 'large' ? 'text-base' : 'text-sm'}`}
     >
       {jsxContent}
     </p>
