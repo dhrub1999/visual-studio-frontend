@@ -1,22 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 
 import Hero from './Hero';
 import PricingGrid from '@/components/layouts/PricingGrid';
 import PaddingContainer from '@/components/layouts/PaddingContainer';
-import PriceLayout from './PriceLayout';
-import Testimonials from '@/components/layouts/Testimonials';
+import { testimonials } from '@/lib/sanity/fetchData';
 import Button from '@/components/ui/Button';
 import FeatureCard from '@/components/ui/FeatureCard';
-import {
-  landscapeImages,
-  portraitImages,
-  pricings,
-  socialLinks,
-  testimonials,
-} from '@/lib/data';
-
+import { landscapeImages, portraitImages, socialLinks } from '@/lib/data';
 import './styles/pricing.css';
-import Link from 'next/link';
+import Testimonials from '@/components/layouts/Testimonials';
 
 const Pricing = () => {
   return (
@@ -28,12 +21,6 @@ const Pricing = () => {
           landscapeArr={landscapeImages}
         />
       </section>
-      {/* 
-      <section className='mt-12 bg-neutral-800 md:mt-[72px] lg:mt-24'>
-        <PaddingContainer>
-          <PriceLayout plans={pricings} />
-        </PaddingContainer>
-      </section> */}
 
       <section className='relative mt-12 overflow-hidden md:mt-[72px] lg:mt-24'>
         <PaddingContainer classname='relative'>
