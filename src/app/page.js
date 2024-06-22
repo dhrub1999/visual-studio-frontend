@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main>
       <section className=''>
-        <PaddingContainer classname='flex flex-col gap-y-8 md:gap-y-12 justify-center items-center lg:items-end h-[calc(100vh-64px)]'>
+        <PaddingContainer classname='flex h-[calc(100vh-64px)] flex-col items-center justify-center gap-y-8 md:gap-y-12 lg:items-end'>
           <div className='flex w-full flex-col items-center justify-center gap-y-4 text-center lg:w-[60%] lg:items-end lg:text-right'>
             <h1 className='font-headline text-4xl-pacifico text-neutral-200 md:text-5xl-pacifico lg:text-6xl-pacifico'>
               Beyond Pixels, Into Emotions.
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className='relative mt-12 md:mt-[72px] lg:mt-24'>
+      <section className='relative mt-12 overflow-hidden md:mt-[72px] lg:mt-24'>
         <PaddingContainer classname='relative'>
           <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
             Happy clients, Happy stories.
