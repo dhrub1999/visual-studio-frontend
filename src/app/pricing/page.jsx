@@ -1,26 +1,20 @@
 import React from 'react';
+import Link from 'next/link';
 
 import Hero from './Hero';
 import PricingGrid from '@/components/layouts/PricingGrid';
 import PaddingContainer from '@/components/layouts/PaddingContainer';
-import PriceLayout from './PriceLayout';
 import Testimonials from '@/components/layouts/Testimonials';
+import { testimonials as userReviews } from '@/lib/sanity/fetchData';
 import Button from '@/components/ui/Button';
 import FeatureCard from '@/components/ui/FeatureCard';
-<<<<<<< Updated upstream
 import {
   landscapeImages,
   portraitImages,
-  pricings,
   socialLinks,
   testimonials,
 } from '@/lib/data';
-=======
-import { landscapeImages, portraitImages, socialLinks } from '@/lib/data';
->>>>>>> Stashed changes
-
 import './styles/pricing.css';
-import Link from 'next/link';
 
 const Pricing = () => {
   return (
@@ -44,7 +38,7 @@ const Pricing = () => {
           <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
             Happy clients, Happy stories.
           </h2>
-          <Testimonials userReviews={testimonials} className='mt-6 md:mt-6' />
+          <Testimonials userReviews={userReviews} className='mt-6 md:mt-6' />
           <Link href={socialLinks[0].href} target='_blank'>
             <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
               Plan your Shoot

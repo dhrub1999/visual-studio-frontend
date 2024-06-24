@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import React from 'react';
 
 const User = ({ userImg, name, role }) => {
@@ -13,10 +13,10 @@ const User = ({ userImg, name, role }) => {
         />
       </div>
       <div className='flex flex-col font-body'>
-        <p className='text-base font-bold capitalize text-neutral-400 md:text-lg'>
+        <p className='line-clamp-1 text-base font-bold capitalize text-neutral-400 md:text-lg'>
           {name}
         </p>
-        <p className='text-xs font-normal capitalize text-neutral-500 md:text-sm'>
+        <p className='line-clamp-1 text-xs font-normal capitalize text-neutral-500 md:text-sm'>
           {role}
         </p>
       </div>

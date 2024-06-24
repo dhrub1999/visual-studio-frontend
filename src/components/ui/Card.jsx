@@ -1,6 +1,7 @@
 import React from 'react';
 import User from './User';
 import { cn } from '@/lib/utils';
+import RichTextToParagraph from '../other/RichTextToParagraph';
 
 const Card = ({ userReview, className, size }) => {
   return (
@@ -11,17 +12,13 @@ const Card = ({ userReview, className, size }) => {
       )}
     >
       <blockquote aria-label='review'>
-        <p
-          className={`font-body font-normal text-neutral-100 ${size === 'large' ? 'text-base' : 'text-sm'}`}
-        >
-          {userReview?.review}
-        </p>
+        <RichTextToParagraph richText={userReview?.review} variant={size} />
       </blockquote>
       <div className='mt-4'>
         <User
-          userImg={userReview?.imgSrc}
+          userImg={userReview?.imageUrl}
           name={userReview?.name}
-          role={userReview?.profession}
+          role={userReview?.role}
         />
       </div>
     </figure>

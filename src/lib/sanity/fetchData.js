@@ -22,6 +22,7 @@ async function getTestimonials() {
   const query = `*[_type == "testimonials"]{
     _id,
     name,
+    role,
     "imageUrl": image.asset->url,
     review[]{
       ...,
@@ -34,35 +35,25 @@ async function getTestimonials() {
 
 export const testimonials = await getTestimonials();
 
-<<<<<<< Updated upstream
-console.log(testimonials);
-=======
-async function getBlogPosts() {
-  const query = `*[_type == "blogposts"]{
-    _id,
-    title,
-    slug,
-    author->{
+async function getLatestBlogPosts() {
+  const query = `
+    *[_type == "blogposts"] | order(publishedAt desc) [0...3]{
       _id,
-      name,
-      image
-    },
-    mainImage{
-      asset->{
-        _id,
-        url
-      }
-    },
-    categories[]->{
-      _id,
-      title
-    },
-    publishedAt,
-    body
-  }`;
+      title,
+      "slug": slug.current,
+      publishedAt,
+      "author": {
+        "name": author->name,
+        "image": author->image.asset->url
+      },
+      "mainImage": mainImage.asset->url,
+      categories[]->{
+        title
+      },
+      body
+    }`;
   const blogPosts = await client.fetch(query);
   return blogPosts;
 }
 
-export const blogPosts = await getBlogPosts();
->>>>>>> Stashed changes
+export const blogPosts = await getLatestBlogPosts();
