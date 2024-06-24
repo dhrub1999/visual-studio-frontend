@@ -6,11 +6,12 @@ import Testimonials from '@/components/layouts/Testimonials';
 import Button from '@/components/ui/Button';
 import Carousel from '@/components/ui/Carousel';
 import FeatureCard from '@/components/ui/FeatureCard';
-import { socialLinks, testimonials } from '@/lib/data';
+import { socialLinks } from '@/lib/data';
 import {
   heroGridImages,
-  testimonials as userReview,
+  testimonials as userReviews,
 } from '@/lib/sanity/fetchData';
+import BlogGrid from '@/components/ui/BlogGrid';
 
 const images = [
   '/landscape-1.jpeg',
@@ -21,6 +22,8 @@ const images = [
   '/landscape-6.jpeg',
   '/landscape-7.jpeg',
 ];
+
+// console.log(blogPosts);
 
 export default function Home() {
   return (
@@ -81,7 +84,7 @@ export default function Home() {
           <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
             Happy clients, Happy stories.
           </h2>
-          <Testimonials userReviews={userReview} className='mt-6 md:mt-6' />
+          <Testimonials userReviews={userReviews} className='mt-6 md:mt-6' />
           <Link href={socialLinks[0].href} target='_blank'>
             <Button variant='primary' className='mx-auto mt-8 block lg:mt-12'>
               Plan your Shoot
@@ -94,6 +97,16 @@ export default function Home() {
       {/* Offer */}
       <section className='relative mb-4 mt-12 flex justify-center md:mb-6 md:mt-[72px] lg:mb-8 lg:mt-24'>
         <FeatureCard />
+      </section>
+
+      {/* Blogs */}
+      <section className='relative mt-12 overflow-hidden md:mt-[72px] lg:mt-24'>
+        <PaddingContainer>
+          <h2 className='text-center font-headline text-2xl-pacifico text-neutral-300 md:text-4xl-pacifico lg:text-5xl-pacifico'>
+            Recent Blogs
+          </h2>
+          <BlogGrid />
+        </PaddingContainer>
       </section>
     </main>
   );

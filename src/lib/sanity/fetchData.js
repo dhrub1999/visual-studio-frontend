@@ -18,9 +18,26 @@ async function getGridImages() {
 
 export const heroGridImages = await getGridImages();
 
-export async function getBlogs() {
+async function getTestimonials() {
+  const query = `*[_type == "testimonials"]{
+    _id,
+    name,
+    role,
+    "imageUrl": image.asset->url,
+    review[]{
+      ...,
+      children[]{...}
+    }
+  }`;
+  const testimonials = await client.fetch(query);
+  return testimonials;
+}
+
+export const testimonials = await getTestimonials();
+
+async function getLatestBlogPosts() {
   const query = `
-    *[_type == "blogposts"]{
+    *[_type == "blogposts"] | order(publishedAt desc) [0...3]{
       _id,
       title,
       "slug": slug.current,
@@ -39,22 +56,4 @@ export async function getBlogs() {
   return blogPosts;
 }
 
-const blogs = await getBlogs();
-export default blogs;
-
-async function getTestimonials() {
-  const query = `*[_type == "testimonials"]{
-    _id,
-    name,
-    role,
-    "imageUrl": image.asset->url,
-    review[]{
-      ...,
-      children[]{...}
-    }
-  }`;
-  const testimonials = await client.fetch(query);
-  return testimonials;
-}
-
-export const testimonials = await getTestimonials();
+export const blogPosts = await getLatestBlogPosts();
