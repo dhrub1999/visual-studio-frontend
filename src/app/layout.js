@@ -41,9 +41,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <head>
-        <meta name='viewport' content='width=device-width, minimum-scale=1.0' />
-      </head>
       <body
         className={`${openSans.variable} ${pacifico.variable} ${cormorantGaramond.variable} overflow-hidden bg-neutral-900`}
       >

@@ -26,12 +26,6 @@ const Pricing = () => {
           landscapeArr={landscapeImages}
         />
       </section>
-      {/* 
-      <section className='mt-12 bg-neutral-800 md:mt-[72px] lg:mt-24'>
-        <PaddingContainer>
-          <PriceLayout plans={pricings} />
-        </PaddingContainer>
-      </section> */}
 
       <section className='relative mt-12 overflow-hidden md:mt-[72px] lg:mt-24'>
         <PaddingContainer classname='relative'>
