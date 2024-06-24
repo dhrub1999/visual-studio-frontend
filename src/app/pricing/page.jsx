@@ -7,6 +7,7 @@ import PriceLayout from './PriceLayout';
 import Testimonials from '@/components/layouts/Testimonials';
 import Button from '@/components/ui/Button';
 import FeatureCard from '@/components/ui/FeatureCard';
+<<<<<<< Updated upstream
 import {
   landscapeImages,
   portraitImages,
@@ -14,6 +15,9 @@ import {
   socialLinks,
   testimonials,
 } from '@/lib/data';
+=======
+import { landscapeImages, portraitImages, socialLinks } from '@/lib/data';
+>>>>>>> Stashed changes
 
 import './styles/pricing.css';
 import Link from 'next/link';

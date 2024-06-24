@@ -18,30 +18,6 @@ async function getGridImages() {
 
 export const heroGridImages = await getGridImages();
 
-export async function getBlogs() {
-  const query = `
-    *[_type == "blogposts"]{
-      _id,
-      title,
-      "slug": slug.current,
-      publishedAt,
-      "author": {
-        "name": author->name,
-        "image": author->image.asset->url
-      },
-      "mainImage": mainImage.asset->url,
-      categories[]->{
-        title
-      },
-      body
-    }`;
-  const blogPosts = await client.fetch(query);
-  return blogPosts;
-}
-
-const blogs = await getBlogs();
-export default blogs;
-
 async function getTestimonials() {
   const query = `*[_type == "testimonials"]{
     _id,
@@ -58,4 +34,35 @@ async function getTestimonials() {
 
 export const testimonials = await getTestimonials();
 
+<<<<<<< Updated upstream
 console.log(testimonials);
+=======
+async function getBlogPosts() {
+  const query = `*[_type == "blogposts"]{
+    _id,
+    title,
+    slug,
+    author->{
+      _id,
+      name,
+      image
+    },
+    mainImage{
+      asset->{
+        _id,
+        url
+      }
+    },
+    categories[]->{
+      _id,
+      title
+    },
+    publishedAt,
+    body
+  }`;
+  const blogPosts = await client.fetch(query);
+  return blogPosts;
+}
+
+export const blogPosts = await getBlogPosts();
+>>>>>>> Stashed changes
