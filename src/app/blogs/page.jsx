@@ -7,12 +7,12 @@ import FeatureCard from '@/components/ui/FeatureCard';
 
 const Blogs = () => {
   return (
-    <main className='h-screen'>
+    <main className=''>
       <PaddingContainer classname='h-full'>
-        <h1 className='mt-24 text-center font-headline text-4xl-pacifico text-neutral-200 md:text-5xl-pacifico lg:text-6xl-pacifico'>
-          Blogs will be here soon, stay tuned!
+        <h1 className='mt-8 text-center font-headline text-3xl-pacifico text-neutral-200 md:mt-10 md:text-5xl-pacifico lg:text-6xl-pacifico'>
+          From the Blogs
         </h1>
-        <div className='mb-8 mt-4 grid w-full grid-cols-1 place-items-center md:mb-12 md:mt-8 md:grid-cols-2 xl:grid-cols-3'>
+        <div className='mb-8 mt-4 grid w-full grid-cols-1 place-items-center gap-8 md:mb-12 md:mt-8 md:grid-cols-2 xl:grid-cols-3'>
           {blogs.map((blog) => (
             <BlogCard key={blog._id} blog={blog} />
           ))}
